@@ -12,7 +12,7 @@ import { sendPush } from './pushServer';
 dotenv.config(); // Cargar variables de entorno
 
 const app = express();
-const port = process.env.SERVER_PORT;
+const port = process.env.SERVER_PORT || 4000;
 
 // Middleware configuration
 app.use(express.json());
